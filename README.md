@@ -10,17 +10,14 @@ pip install scrapy
 ```
 # 图片的存放地址
 IMAGES_STORE = '/store/path/'
-```
 
-修改./douban_pic/spiders/pic_crawl.py:
-```
-    start_urls = (
-        # 逐个填入待爬取相册的url,例如：
-        'https://movie.douban.com/subject/26411388/photos?type=S', 
-        'https://movie.douban.com/subject/1300798/photos?type=S',
-    )
-```
+# 逐个填入待爬取相册的 name: url 键值对 如下:
+ALBUMS = {
+        'rolling girls': 'https://movie.douban.com/subject/25955418/photos?type=S',
+        '回转企鹅罐': 'https://movie.douban.com/subject/6085356/photos?type=S'
+}
 
+```
 
 运行:
 ```

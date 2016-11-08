@@ -1,5 +1,17 @@
 # -*- coding: utf-8 -*-
 
+# Personal setting
+
+# 图片保存地址
+IMAGES_STORE = '/home/nanguage/Pictures/douban' 
+
+# 逐个填入待爬取相册的 name: url 键值对
+ALBUMS = {
+        'rolling girls': 'https://movie.douban.com/subject/25955418/photos?type=S',
+        '回转企鹅罐': 'https://movie.douban.com/subject/6085356/photos?type=S'
+}
+
+
 # Scrapy settings for douban_pic project
 #
 # For simplicity, this file contains only settings considered important or
@@ -99,7 +111,6 @@ ITEM_PIPELINES = {
         # 'scrapy.pipelines.images.ImagesPipeline':1
         'douban_pic.pipelines.DoubanPicPipeline':1
 }
-IMAGES_STORE = '' # your path for store img
 
 # DOWNLOAD_HANDLERS = {
   # 's3': None,

@@ -8,3 +8,4 @@ class DoubanPicItem(scrapy.Item):
     image_paths = scrapy.Field()
     images = scrapy.Field()
     subject_id = scrapy.Field()
+    subject_name = scrapy.Field()
